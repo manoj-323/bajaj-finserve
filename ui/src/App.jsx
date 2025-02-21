@@ -19,7 +19,7 @@ function App() {
         return;
       }
 
-      const res = await axios.post("http://127.0.0.1:8000/bfhl", parsedInput);
+      const res = await axios.post("https://bajaj-finserve-three.vercel.app/bfhl", parsedInput);
       setResponse(res.data);
     } catch (error) {
       alert("Invalid JSON or API error.");
